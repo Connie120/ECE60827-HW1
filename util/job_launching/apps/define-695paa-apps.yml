@@ -1,0 +1,115 @@
+#   execs:
+#       - <exec_name_1>:
+#           - args: <commandline arg_list 1> # Leave blank if no arguments
+#             <optional> accel-sim-mem: <xG>
+#           - args: <commandline arg_list 2>
+#           ...
+#       - <exec_name_2>
+#           ...
+#       ...
+# If you have a bunch of random benchmarks in random places, then a "suite" can be just one benchmark
+
+ece695.part1:
+    exec_dir: "$GPUAPPS_ROOT/bin/$CUDA_VERSION/release/"
+    data_dirs: "$GPUAPPS_ROOT/data_dirs/cuda/rodinia/3.1/"
+    execs:
+        - b+tree-rodinia-3.1:
+            - args:  file ./data/mil.txt command ./data/command.txt
+              accel-sim-mem: 1G
+        - backprop-rodinia-3.1:
+            - args:  65536
+              accel-sim-mem: 1G
+        - bfs-rodinia-3.1:
+            - args:  ./data/graph1MW_6.txt
+              accel-sim-mem: 1G
+        - gaussian-rodinia-3.1:
+            - args:  -f ./data/matrix208.txt
+              accel-sim-mem: 1G
+        - hotspot-rodinia-3.1:
+            - args:  1024 2 2 ./data/temp_1024 ./data/power_1024 output.out
+              accel-sim-mem: 1G
+        - lud-rodinia-3.1:
+            - args:  -s 256 -v
+              accel-sim-mem: 1G
+        - myocyte-rodinia-3.1:
+            - args:  100 1 0
+              accel-sim-mem: 4G
+        - nn-rodinia-3.1:
+            - args:  ./data/filelist_4 -r 5 -lat 30 -lng 90
+              accel-sim-mem: 4G
+        - nw-rodinia-3.1:
+            - args:  2048 10
+              accel-sim-mem: 1G
+        - srad_v1-rodinia-3.1:
+            - args:  100 0.5 502 458
+              accel-sim-mem: 1G
+
+ece695.part2:
+    exec_dir: "$GPUAPPS_ROOT/bin/$CUDA_VERSION/release/"
+    data_dirs: "$GPUAPPS_ROOT/data_dirs/cuda/rodinia/3.1/"
+    execs:
+        - b+tree-rodinia-3.1:
+            - args:  file ./data/mil.txt command ./data/command.txt
+              accel-sim-mem: 1G
+        - backprop-rodinia-3.1:
+            - args:  65536
+              accel-sim-mem: 1G
+        - bfs-rodinia-3.1:
+            - args:  ./data/graph1MW_6.txt
+              accel-sim-mem: 1G
+        - gaussian-rodinia-3.1:
+            - args:  -f ./data/matrix208.txt
+              accel-sim-mem: 1G
+        - hotspot-rodinia-3.1:
+            - args:  1024 2 2 ./data/temp_1024 ./data/power_1024 output.out
+              accel-sim-mem: 1G
+        - lud-rodinia-3.1:
+            - args:  -s 256 -v
+              accel-sim-mem: 1G
+        - myocyte-rodinia-3.1:
+            - args:  100 1 0
+              accel-sim-mem: 4G
+        - nn-rodinia-3.1:
+            - args:  ./data/filelist_4 -r 5 -lat 30 -lng 90
+              accel-sim-mem: 4G
+        - nw-rodinia-3.1:
+            - args:  2048 10
+              accel-sim-mem: 1G
+        - srad_v1-rodinia-3.1:
+            - args:  100 0.5 502 458
+              accel-sim-mem: 1G
+
+ece695.part4:
+    exec_dir: "$GPUAPPS_ROOT/bin/$CUDA_VERSION/release/"
+    data_dirs: "$GPUAPPS_ROOT/data_dirs/cuda/rodinia/3.1/"
+    execs:
+        - b+tree-rodinia-3.1:
+            - args:  file ./data/mil.txt command ./data/command.txt
+              accel-sim-mem: 1G
+        - backprop-rodinia-3.1:
+            - args:  65536
+              accel-sim-mem: 1G
+        - bfs-rodinia-3.1:
+            - args:  ./data/graph1MW_6.txt
+              accel-sim-mem: 1G
+        - gaussian-rodinia-3.1:
+            - args:  -f ./data/matrix208.txt
+              accel-sim-mem: 1G
+        - hotspot-rodinia-3.1:
+            - args:  1024 2 2 ./data/temp_1024 ./data/power_1024 output.out
+              accel-sim-mem: 1G
+        - lud-rodinia-3.1:
+            - args:  -s 256 -v
+              accel-sim-mem: 1G
+        - myocyte-rodinia-3.1:
+            - args:  100 1 0
+              accel-sim-mem: 4G
+        - nn-rodinia-3.1:
+            - args:  ./data/filelist_4 -r 5 -lat 30 -lng 90
+              accel-sim-mem: 4G
+        - nw-rodinia-3.1:
+            - args:  2048 10
+              accel-sim-mem: 1G
+        - srad_v1-rodinia-3.1:
+            - args:  100 0.5 502 458
+              accel-sim-mem: 1G
