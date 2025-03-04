@@ -2,7 +2,7 @@
 
 ## Professor: T. N. Vijaykumar <br> TA: Ni Kang
 
-## Due on Saturday, April 13 2024 at 11:59 PM ET 
+## Due on Sunday, March 30 2025 at 11:59 PM ET 
 
 ## Introduction to GPU Simulation
 
